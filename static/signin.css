@@ -1,0 +1,207 @@
+/*things to remember
+1 login button border should be invisible
+2 "already have an account " should be small letter should be less heightlighted
+3  link should be different color but line i.e text decoration should be underlined only on hover
+4  remember to give hover to login button
+5  */
+
+
+/* Google Fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400;500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif; /*Poppins font is for bold lettering*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;  /*10px = 1vh*//*if 100% toh jitne part likha hai pura cover karega , vh is used for large area*/
+    width: 100%;
+    display: flex;
+    align-items: center; /*vertically center*/
+    justify-content: center; /*horizontal center*/
+    background-color: #ff50a4;
+    column-gap: 30px;
+}
+
+.form{
+    max-width: 430px;
+    width: 100%;
+    position: absolute;  /*bcoz of js ;to show only one form*/
+    padding: 30px ; /*margin won't work here */
+    border-radius: 6px;
+    background: #FFF;
+}
+.form.signup{   /* bcoz of js*/
+    opacity: 0 ;
+    pointer-events: none;
+
+}
+.forms.show-signup  .form.signup{  /*bcoz of js, show signup on clicking signup*/
+    opacity: 1 ; /*understand the role of opacity*/
+    pointer-events: auto;
+
+}
+.forms.show-signup  .form.login{  /*bcoz of js, show signup on clicking signup*/
+    opacity: 0 ; /*understand the role of opacity*/
+    pointer-events: none;
+
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .feild /*dot after form so sare form ke feild pattern pe work karega*/{
+    position: relative;
+    height: 50px; /*distance between every feild*/
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.eye-icon{
+    position: absolute;
+    font-size: 18px;
+    color: #cacaca;
+    /* align-items: center; didn not work bcoz it is not in any box it is in form */ 
+    top: 50%;
+    right: 10px; /*right side se 10px dur*/
+    transform: translateY(-50%); /*box ke andar ,up*/
+    cursor: pointer;/*cursor eye ke uppar ate hi pointer hojana chahiye*/
+    padding: 5px;
+}
+.feild input,button{
+    height: 100%; /*email box mai changes*/
+    width: 100%;  /*email box mai changes*/
+    border: none; /*border not visible of input and button*/
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.feild input{
+    padding: 0 15px ;
+    outline: none;
+    border: 1px solid #cacaca; /*border of input visible banaya*/
+}
+.feild input:focus{
+    border-bottom-width: 2px; /*focus on hovering*/
+
+}
+.feild button{
+    color: #FFF;
+    background-color: #ff50a4;
+}
+.feild button:hover{
+    background-color: #ff50a4;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span, a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form-link a{
+    color: #ff50a4;
+    text-decoration: none;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    position:relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0 ; /*gap between already account and line*/
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'or';
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+.media-options a{ /*as media feild mai background color dala isliye extra space ara tha box mai*/
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+a.facebook /*for changes in 'a' of facebook this way have to call ,as 'facebook' is in under ancar tag not in div*/{
+    color: #fff;
+    text-decoration: none;
+    background-color: #f2499b;
+}
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    background-color: #FFF;
+    color: #ff50a4;
+    font-size: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.facebook-icon,img.google-img{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+.feild.google{
+    color: #ff50a4;
+    text-decoration: none;
+
+}
+a.google{
+    border: 1px solid #cacaca;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+
+@media screen and (max-width:400px) {  /*for better response ,do understand more betterly*/
+    .form{
+        padding: 15px 10px;
+    }
+    
+}
+.mb-3{
+    margin-top: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 2px solid #f2499b ;
+ 
+ color: #940C4D ;
+}
+select{
+    border: 0px solid #f2499b ;
+    color: #940C4D;
+}
+option{
+ border: 2px solid #f2499b ;
+    
+}

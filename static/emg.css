@@ -1,0 +1,235 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap");
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Patrick Hand', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --background-color: #F8F3F1;
+    --primary-text-color: #940C4D;
+    --secondary-text-color: #ff50a4;
+    --accent-color: #c3d7ff;
+    --accent-color-dark: #7393d3;
+    --padding-inline-section: 20px;
+}
+
+body {
+   
+  font-family: 'Patrick Hand', cursive;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* flex-items */
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* nav bar hover and button */
+.hover-link {
+  color: var(--primary-text-color);
+}
+.hover-link:hover {
+  color: var(--accent-color);
+  transition-property: 0.2s ease-out;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+  background-color: var(--accent-color-dark);
+  color: white;
+}
+.main-nav {
+  justify-content: space-between;
+  margin: 10px 30px 0px 30px;
+}
+
+.company-logo img {
+  height: 100px;
+}
+.name-name{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: 100;
+}
+.nav-links {
+  flex-basis: 730px;
+  font-size: 1.2rem;
+}
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+/* sidebar*/
+.sidebar{
+  position: absolute;
+  left: -250px;
+  width: 250px;
+  height: 140%;
+  background: var(--secondary-text-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar header{
+  font-size: 22px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  margin-top: 23px;
+}
+
+.photo img{
+  height: 150px;
+  margin-left: 43px;
+  
+}
+
+.sidebar ul{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  line-height: 65px;
+  font-size: 17px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-top: 3rem;
+}
+
+#check{
+  display: none;
+}
+
+
+.options img{
+  position: absolute;
+  left: 20px;
+  top: 44px;
+  font-size: 35px;
+  padding: 6px 12px;
+  cursor: pointer;
+
+}
+
+.cancel img{
+  position: absolute;
+  margin-left: 206px;
+  margin-top: -91px;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+
+} 
+
+#check{
+  display: none;
+}
+
+
+/* Patient Profiles*/
+.patient-area{
+  border-radius: 30px;
+  margin: 10px 10px 0px 10px;
+  flex-wrap: wrap;
+  
+  justify-content: space-around;
+  /* margin-block: 30px; */
+  gap: 10px;
+  background-color: #ffb3d8;
+}
+.patient-card {
+  padding:10px ;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3rem;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #F3EDEB;
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+.patient-card:hover {
+  border: solid #F8EBD6 0.2px;
+  box-shadow: 0 0 10px #940C4D;
+  transition: ease-in-out 0.5s;
+  height: 355px;
+  width: 355px;
+}
+/* .card-title{
+  font-family: 'Pacifico',cursive;
+} */
+.patient-card img{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.patient-text{
+  flex-direction: column;
+  margin: auto;
+}
+
+#check:checked ~ section{
+  margin-left: 250px;
+}
+.button-text {
+  font-size: 20px;
+  background-color: var(--accent-color) !important;
+}
+
+.button-text:hover {
+  background-color: var(--accent-color-dark) !important;
+}

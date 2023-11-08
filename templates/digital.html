@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="static/digital.css">
+  <title>Upload a picture</title>
+</head>
+<body>
+  <nav>
+      <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row">
+          <div class="logo">
+            <a href="#" class="company-logo img"
+              ><img src="/static/logo.png" alt="mommy-and-me-logo"
+            /></a>
+          </div>
+          <div class="name">
+            <h2 class="name-name">Mommy & me</h2>
+          </div>
+        </div>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="/" class="hover-link">Home</a></li>
+            <li><a href="#" class="hover-link">About Us</a></li>
+            <li><a href="/comunity" class="hover-link">Community</a></li>
+            <li><a href="/resources" class="hover-link">Resources</a></li>
+            <li><a href="/logout" class="hover-link secondary-button">Log In</a></li>
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <header>
+    <div class="container flex header-section">
+        <h1>CHOOSE A PICTURE</h1>
+        <!-- <i class="fa-solid fa-user-doctor header-symbol"></i> -->
+    </div>
+  </header>
+<div class="upload-box">
+        <div class="upload-container">
+            <input type="file" id="file-input" accept="image/png,image/jpeg" onchange="preview()">
+            <label for="file-input">
+                <i class="uil uil-upload"></i> &nbsp; Choose a Photo
+            </label>
+            <p id="num-of-files">No Files Chosen</p>
+        </div>
+        <button onclick="uploadImage()">Upload</button>
+    </div>
+    <div id="image-cards"></div>
+<div id="flipbook-container"></div>
+
+
+  <script src="static/digital.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap");
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Patrick Hand', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --background-color: #F8F3F1;
+    --primary-text-color: #940C4D;
+    --secondary-text-color: #ff50a4;
+    --accent-color: #c3d7ff;
+    --accent-color-dark: #7393d3;
+    --padding-inline-section: 20px;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* flex-items */
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* nav bar hover and button */
+.hover-link {
+  color: var(--primary-text-color);
+}
+.hover-link:hover {
+  color: var(--accent-color-dark);
+  transition-property: 0.2s ease-out;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+  background-color: var(--accent-color-dark);
+  color: white;
+}
+.main-nav {
+  justify-content: space-between;
+  margin: 10px 30px 0px 30px;
+}
+
+.company-logo img {
+  height: 100px;
+}
+.name-name{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: 100;
+}
+.nav-links {
+  flex-basis: 730px;
+  font-size: 2.4rem;
+}
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+header {
+  background-color: var(--accent-color);
+}
+.header-left{
+  margin-left: 20px;
+  max-width: 60%;
+}
+
+.header-left h1{
+  font-size: 4.8rem;
+}
+
+.header-left p {
+  font-size: 2.4rem;
+  line-height: 1.0;
+}
+
+.get-started-btn{
+  background-color: var(--accent-color-dark)!important;
+}
+
+.get-started-btn:hover{
+  background-color: var(--primary-text-color)!important;
+}
+.card-container {
+      display: flex;
+      justify-content: center;
+      /* margin: 10px; */
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .card {
+        background-color: var(--secondary-text-color);
+        padding: 20px;
+        color: var(--background-color);
+        border-radius: 10px;
+        margin-right:30px;
+    }
+    .contact-container {
+      color: #EAEFD3;
+    }
+.card-text{
+  color: var(--background-color);
+  font-size: 2.4rem;
+}
+
+.card-img-top{
+  height: 200px;
+}
+footer {
+  margin: 10px, 0px, 0px, 0px;
+  padding-block: 80px;
+  /* background-color: var(--accent-color); */
+}
+.company-info{
+  max-width: 45%;
+}
+.link-coloumn {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px
+}
+.footer-container{
+  align-items: flex-start;
+  justify-content: space-between;
+  /* gap: 50px; */
+}
+.footer-container p{
+color: var(--primary-text-color);
+}

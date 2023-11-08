@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/babysize.css">
+  <title>Baby Size by fruit</title>
+</head>
+<body>
+  <nav>
+    <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row;">
+        <div class="logo">
+            <a href="#" class="company-logo img"><img src="/static/logo.png" alt="mommy-and-me-logo"></a>
+        </div>
+        <div class="name">
+            <h2 class="name-name">Mommy & me</h2>
+        </div>
+        </div>
+      <div class="nav-links">
+      <ul class="flex">
+        <li><a href="/"class="hover-link">Home</a></li>
+        <li><a href="#"class="hover-link">About Us</a></li>
+        <li><a href="#"class="hover-link">Community</a></li>
+        <li><a href="#"class="hover-link">Resources</a></li>
+        <li><a href="#"class="hover-link secondary-button">Log In</a></li>
+        <li><a href="#"class="hover-link primary-button">Sign Up</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="stuff">
+  <h2 style="display: flex; justify-content: center;">Your baby is the size of a:</h2>
+  <div class="slider-container">
+    <div class="image-container">
+      <img src="/static/baby/0infant.png" alt="Infant" class="slider-image" id="slider-image">
+    </div>
+    <input type="range" min="1" max="38" value="1" class="slider" id="image-slider">
+     <span id="slider-value" style="font-size: 50px;" >1</span>
+     <br>
+     <span id="image-description" style="font-size: 30px;"></span>
+
+  </div>
+</section>
+  <script src="static/babysize.js"></script>
+</body>
+</html>

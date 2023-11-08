@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap");
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Patrick Hand', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --background-color: #F8F3F1;
+    --primary-text-color: #940C4D;
+    --secondary-text-color: #ff50a4;
+    --accent-color: #c3d7ff;
+    --accent-color-dark: #7393d3;
+    --padding-inline-section: 20px;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.container {
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* flex-items */
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* nav bar hover and button */
+.hover-link {
+  color: var(--primary-text-color);
+}
+.hover-link:hover {
+  color: var(--accent-color);
+  transition-property: 0.2s ease-out;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+  background-color: var(--accent-color-dark);
+  color: white;
+}
+.main-nav {
+  justify-content: space-between;
+  margin: 10px 30px 0px 30px;
+}
+
+.company-logo img {
+  height: 100px;
+}
+.name-name{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: 100;
+}
+.nav-links {
+  flex-basis: 730px;
+  font-size: 1.2rem;
+}
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+/* Header */
+header {
+  padding: 50px var(--padding-inline-section) 0;
+}
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+
+/*BODY*/
+.box{
+  background-color: var(--primary-text-color);
+  width: 60%;
+  min-width: 450px;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 7px ;
+  padding: 50px 20px;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+}
+
+input[type="file"]{
+  display: none;
+
+}
+
+label{
+  display: block;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--accent-color-dark);
+  width: 300px;
+  padding: 18px 0;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box p{
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+#images{
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+figure{
+  width: 45%;
+}
+
+img{
+  width: 100%;
+}
+
+figcaption{
+  text-align: center;
+  font-size: 2.4vmin;
+  margin-top: 0.5vmin;
+}
+
+input[type= "submit"]{
+  margin-left: 35rem;
+  height: 55px;
+  width: 20rem;
+  font-size: 25px;
+  background: var(--accent-color);
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-width: 0px;
+
+}
+
+/*footer */
+footer{
+  margin-top: 30rem;
+  padding-block: 80px;
+  background-color: #456990;
+  /* background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: 100%;
+  padding: var(--padding-inline-section);
+}
+.footer-container {
+  justify-content: center;
+  gap: 30px;
+}
+.footer-text{
+  color: white;
+}
+
+.upload-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.upload-container {
+    text-align: center;
+}
+
+.image-card {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+#flipbook-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.flipbook-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.flipbook-page:not(:first-child) {
+    transform: scaleX(-1);
+}

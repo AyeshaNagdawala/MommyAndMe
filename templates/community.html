@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <!-- IconScout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="static/social.css">
+</head>
+<body>
+  <nav>
+    <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row;">
+        <div class="logo">
+            <a href="#" class="company-logo img"><img src=" static/logo.png" alt="mommy-and-me-logo"></a>
+        </div>
+        <div class="name">
+            <h2 class="name-name">Mommy & me</h2>
+        </div>
+        </div>
+      <div class="nav-links">
+      <ul class="flex">
+        <li><a href="#"class="hover-link">Home</a></li>
+        <li><a href="#"class="hover-link">About Us</a></li>
+        <li><a href="#"class="hover-link">Community</a></li>
+        <li><a href="#"class="hover-link">Resources</a></li>
+        <li><a href="#"class="hover-link secondary-button">Log In</a></li>
+        <li><a href="#"class="hover-link primary-button">Sign Up</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-------------------------------- MAIN ----------------------------------->
+    <main>
+        <div class="container">
+            <!----------------- LEFT -------------------->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src=" static/social media/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Nia Ridania</h4>
+                        <p class="text-muted">
+                            @niaridania
+                        </p>
+                    </div>
+                </a>
+
+                <!----------------- SIDEBAR -------------------->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><a href="/social media/social.html" style="color:#940C4D;"><i class="uil uil-home"></i></a></span>
+                        <h3>Home</h3>   
+                    </a>
+                    <a class="menu-item">
+                        <span class="button-lmao"><i class="uil uil-plus-circle"></i></span>
+                        <h3>Create New Post</h3>
+                    </a>
+                    <a class="menu-item"  id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">4</small></i></span>
+                        <h3>Notification</h3>
+                        <!--------------- NOTIFICATION POPUP --------------->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src=" /social media/profile-1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nehaaaaa</b> accepted your friend request
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src=" static/social media/profile-8.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">1 Hour Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src=" static/social media/story-1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Gayatri</b> and <b>283 Others</b> liked your post
+                                    <small class="text-muted">4 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src=" static/social media/story-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Devanshi Shah</b> commented on a post you are tagged in
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+
+                        </div>
+                           
+                        <!--------------- END NOTIFICATION POPUP --------------->
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Setting</h3>
+                    </a>
+                </div>
+                <!----------------- END OF SIDEBAR -------------------->
+                
+            </div>
+
+            <!----------------- MIDDLE -------------------->
+            <div class="middle">
+                 <!----------------- STORIES -------------------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-2.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-3.jpg">
+                        </div>
+                        <p class="name">Devanshi Shah</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-5.jpg">
+                        </div>
+                        <p class="name">Vrinda Mankatu</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-6.jpg">
+                        </div>
+                        <p class="name">Taniya Darshi</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-7.jpg">
+                        </div>
+                        <p class="name">Jigna Patel</p>
+                    </div>
+                </div>
+                <!----------------- END OF STORIES -------------------->
+                <form action="" class="create-post">
+                    <div class="profile-photo">
+                        <img src=" static/social media/story-2.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Reena ?" id="create-post">
+                    <input type="submit" value="Post" class="btn" style="cursor: pointer; background-color: #940C4D; width: 50px; height: 20px; border-radius: 5px; color: white;">
+                </form>
+                <!----------------- FEEDS -------------------->
+                <div class="feeds">
+                    <!----------------- FEED 1 -------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src=" static/social media/profile-1.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Nehaaaaa</h3>
+                                    <small>India, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src=" static/social media/post-1.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Nehaaaaa</b> Welcoming a new life. 
+                            <span class="harsh-tag">#newmom #baby</span></p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            View all 277 comments
+                        </div>
+                    </div>
+                    <!----------------- END OF FEED 1 -------------------->
+
+                    <!----------------- FEED 2 -------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src=" static/social media/story-3.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Devanshi Shah</h3>
+                                    <small>Malad, 2 Hours Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src=" static/social media/post-2.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            
+                            <p>Liked by <b>Diana Rose</b> and <b>2, 323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Devanshi Shah</b> Brought new clothes for my little one 
+                            <span class="harsh-tag">#expectingmom #baby</span></p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            View all 100 comments
+                        </div>
+                    </div>
+                    <!----------------- END OF FEED 2 -------------------->
+
+                    <!----------------- FEED 3 -------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src=" static/social media/story-4.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Jigna Patel</h3>
+                                    <small>Canada, 50 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src=" static/social media/post-3.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <p>Liked by <b>Clara Dwayne</b> and <b>2, 323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Jigna Patel</b> My little girl looking pretty in Indian attire. 
+                            <span class="harsh-tag">#photoshoot #baby #indianbaby</span></p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            View all 50 comments
+                        </div>
+                    </div>
+                    <!----------------- END OF FEED 3 -------------------->
+
+                                            
+                    <!----------------- END OF FEED 7 -------------------->
+                </div>
+                <!----------------- END OF FEEDS -------------------->
+            </div>
+             <!----------------- END OF MIDDLE -------------------->
+
+            <!----------------- RIGHT -------------------->
+            <div class="right">
+                
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                   
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                 =
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests (7)</h6>
+                    </div>
+                   
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src=" static/social media/profile-2.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Jatin</h5>
+                            <p class="text-muted">Hope you have a safe delivery!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-1.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Gayatri</h5>
+                            <p class="text-bold">2 new messages</p>
+                        </div>
+                    </div>
+                 
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src=" static/social media/profile-8.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>John Doe</h5>
+                            <p class="text-muted">All the best for the new beginings! </p>
+                        </div>
+                    </div>
+                   
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-4.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Jigna Patel</h5>
+                            <p class="text-muted">Birthday Tomorrow</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src=" static/social media/story-5.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Vrinda</h5>
+                            <p class="text-bold">5 new messages</p>
+                        </div>
+                    </div>
+                    
+                    
+                <!------- END OF MESSAGES ------->
+            
+                
+            <!----------------- END OF RIGHT -------------------->
+        </div>
+    </main>
+
+    <!----------------- THEME CUSTOMIZATION -------------------->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color, and background</p>
+
+            
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+           
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="social.js"></script>
+</body>
+</html>

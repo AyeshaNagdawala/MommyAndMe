@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="static/childvaccine.css">
+  <title>Mommy & me</title>
+</head>
+<body>
+  <!--NAVBAR-->
+  <nav>
+    <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row;">
+        <div class="logo">
+            <a href="#" class="company-logo img"><img src="/static/logo.png" alt="mommy-and-me-logo"></a>
+        </div>
+        <div class="name">
+            <h2 class="name-name">Mommy & Me</h2>
+        </div>
+        </div>
+      <div class="nav-links">
+      <ul class="flex">
+        <li><a href="/"class="hover-link">Home</a></li>
+        <li><a href="/aboutus"class="hover-link">About Us</a></li>
+        <li><a href="/community"class="hover-link">Community</a></li>
+        <li><a href="/resources"class="hover-link">Resources</a></li>
+        <li><a href="/logout"class="hover-link secondary-button">Log Out</a></li>
+        <li><a href="/map"class="hover-link secondary-button">Clinics Near Me</a></li>
+        
+       
+      </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <header>
+    <div class="container flex header-section">
+        <h1>Know Your Child's Vaccines</h1>
+        <!-- <i class="fa-solid fa-user-doctor header-symbol"></i> -->
+    </div>
+  </header>
+<!--TODO LIST-->
+  <div class="wrapper">
+    <div class="task-input">
+    
+      <input type="text" placeholder="ADD A NEW TASK">
+      
+    </div>
+    <div class="controls">
+      <div class="filters">
+        <span id="all" class="active">ALL</span>
+        <span id="pending">PENDING</span>
+        <span id="completed">COMPLETED</span>
+      </div>
+      <button class="clear-btn">CLEAR ALL</button>
+    </div>
+    <ul class="task-box">
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">BCG Vaccine</p>
+            <p class="description">(Tuberculosis) At birth or till the age of 1 year</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+      
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">Hepatitis B Vaccine</p>
+            <p class="description">(Hepatitis B) At birth </p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">Oral Polio Vaccine</p>
+            <p class="description">(Poliomyelithis) At birth, 6, 10 and 14 weeks</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">Pentavalent Vaccine</p>
+            <p class="description">(Diphtheria, Pertussis, Tetanus, Hepatitis B and Hib) 6, 10 and 14 weeks</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">Rotavirus Vaccine</p>
+            <p class="description">(Rotavirus diarrhoea) 6, 10 and 14 weeks</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">FIPV Vaccine</p>
+            <p class="description">(Poliomyelithis) 6 and 14 weeks</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+
+      <li>
+        <label for="0">
+          <input onclick="updateStatus(this)" type="checkbox" id="0">
+          <div class="task-details">
+            <p style="font-size: 31px;">Measles Rubella</p>
+            <p class="description">(Measles & Rubella) At the age of 9- 12 months</p>
+          </div>
+        </label>
+        <!-- Rest of your settings div and menu -->
+      </li>
+      
+    </ul>
+    
+  </div>
+  <!-- <footer>
+    
+  </footer> -->
+
+  <script src="static/childvaccine.js"></script>
+  
+  
+</body>
+</html>

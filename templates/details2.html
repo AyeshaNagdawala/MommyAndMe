@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mommy & me</title>
+    <link rel="stylesheet" href="static/details2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body style="background-color:var(--accent-color);">
+  <nav>
+    <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row;">
+        <div class="logo">
+            <a href="#" class="company-logo img"><img src="/static/logo.png" alt="mommy-and-me-logo"></a>
+        </div>
+        <div class="name">
+            <h2 class="name-name">Mommy & Me</h2>
+        </div>
+        </div>
+      <div class="nav-links">
+      <ul class="flex">
+        <li><a href="#"class="hover-link">Home</a></li>
+        <li><a href="#"class="hover-link">About Us</a></li>
+        <li><a href="#"class="hover-link">Community</a></li>
+        <li><a href="#"class="hover-link">Resources</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container form-container">
+        <div class="main">
+            <div class="text">
+                <h1 class="form-title">Basic Details</h1>
+             </div>
+             <form action="//details2" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" >
+                  </div>
+                  
+        
+     
+                 
+                  <div class="mb-3">
+                    <label for="contact" class="form-label">Enter your Contact Number</label>
+                    <input type="text" class="form-control" id="contact" name="contact" >
+                  </div>
+                  <div class="text">
+                    <h1 class="form-title">Lifestyle</h1>
+                 </div>
+                 <form action="/patientdetails" method="post">
+                    <label for="Date" class="form-label">Date of delivery</label>
+                        <input type="date" class="date-delivery"/>
+                   
+                        <div class="mb-3" style="margin-top: 10px;">
+                            <label for="type-of-delivery" class="form-label">Type of Birth</label>
+
+                            <select name="type-of-birth" id="type-of-birth" class="birth-type">
+                                <option value="waterbirth" name="waterbirth" id="waterbirth">Water Birth</option>
+                                <option value="female" name="female" id="female">Home Birth</option>
+                                <option value="female" name="female" id="female">Hospital Birth</option>
+                              </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="type-of-delivery" class="form-label">Type of delivery</label>
+
+                            <select name="type-of-delivery" id="type-of-delivery" class="delivery-type">
+                                <option value="waterbirth" name="waterbirth" id="waterbirth">Vaginal Delivery</option>
+                                <option value="female" name="female" id="female">C-section</option>
+                                <option value="female" name="female" id="female">VBAC(vaginal birth after c-section)</option>
+                              </select>
+                        </div>
+                      <button type="submit" class="btn-btn-primary">Submit</button>
+                    </div>
+               </form>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>

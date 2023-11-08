@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="static/map.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+  <title>Vaccination centers</title>
+</head>
+<body>
+  <nav>
+    <div class="main-nav flex">
+        <div class="logo-name flex" style="flex-direction: row;">
+        <div class="logo">
+            <a href="#" class="company-logo img"><img src="static/logo.png" alt="mommy-and-me-logo"></a>
+        </div>
+        <div class="name">
+            <h2 class="name-name">Mommy & me</h2>
+        </div>
+        </div>
+      <div class="nav-links">
+      <ul class="flex">
+        <li><a href="/"class="hover-link">Home</a></li>
+        <li><a href="#"class="hover-link">About Us</a></li>
+        <li><a href="#"class="hover-link">Community</a></li>
+        <li><a href="/"class="hover-link">Resources</a></li>
+        <li><a href="/logout"class="hover-link secondary-button">Log out</a></li>
+        
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="heading">Vaccination Centers Near You</h1>
+
+  <div id="map" class="map"></div>
+    
+</body>
+
+<script>
+   var map = L.map('map');
+    map.setView([19.1182012, 72.8629828], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // Sample banquet hall data
+    var banquetHalls = [
+      { name: "Womens Hospital", lat: 19.071381, long: 72.837173 },
+      { name: "Pali Hospital and Nursing Home", lat: 19.058670, long: 72.833380 },
+      { name: "Smruti Nursing Home", lat: 19.082020, long: 72.837750 },
+      { name: "P.D Hinduja Hospital", lat: 19.06805783, long: 72.835437 },
+      { name: "Elite Maternity Hospital", lat: 19.070765, long: 72.8361905},
+      { name: "Ashwini Maternity and surgical Home", lat: 19.085154, long: 72.84057},
+
+      // Add more banquet halls with their coordinates
+    ];
+
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+      const R = 6371; // Radius of the Earth in kilometers
+      const dLat = (lat2 - lat1) * (Math.PI / 180);
+      const dLon = (lon2 - lon1) * (Math.PI / 180);
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * (Math.PI / 180)) *
+        Math.cos(lat2 * (Math.PI / 180)) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      const distance = R * c; // Distance in kilometers
+      return distance;
+    }
+
+    // Get the user's location
+    function getPosition(position) {
+      var lat = position.coords.latitude;
+      var long = position.coords.longitude;
+      
+      // Create a marker for the user's location with the same icon as seminar but red color
+      var userMarker = L.marker([lat, long], { icon: L.divIcon({ className: 'custom-icon seminar', html: 'Your Location', iconSize: [30, 30] }) }).addTo(map);
+      
+      // Calculate distances and add markers for nearby banquet halls
+      banquetHalls.forEach(function (hall) {
+        var distance = calculateDistance(lat, long, hall.lat, hall.long);
+        var marker = L.marker([hall.lat, hall.long]).addTo(map).bindPopup(hall.name + " (Distance: " + distance.toFixed(2) + " km)");
+      });
+    }
+
+    // Handle errors if geolocation is not supported
+    function handleLocationError() {
+      console.log("Your browser does not support geolocation.");
+    }
+
+    // Check for geolocation support
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(getPosition, handleLocationError);
+    } else {
+      console.log("Geolocation is not available in your browser.");
+    }
+  </script>
+
+
+</script>
+
+</html>

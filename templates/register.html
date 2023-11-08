@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/signin.css">
+
+    <!-- Boxicons CSS (1) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <section class="container forms ">
+       <div class="form login">
+        <div class="form-content">
+ <header style=" color: #940C4D ; " >Login</header>
+            <form action="/login" method="post">
+                <div class="feild input-feild">
+                    <input type="email" placeholder="Email" class="email" name="email" id="email">
+                </div>
+                  
+                <div class="feild input-feild">
+                    <input type="password" placeholder="Password" class="password" name="password" id="password">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="acc_type">Select your Account Type :</label> -->
+                    <select name="acc_type" id="acc_type">
+                    <option disable selected> Select Account Type</option> 
+                    <option value="1">Expecting</option>
+                    <option value="2">Recently gave birth</option>
+                    <option value="3">Mother of toddler</option>
+                    </select>
+                </div>
+
+                <div class="form-link">
+                    <a href="#" class="forget-pass">Forget password?</a>
+                </div>
+                <div class="feild button-feild">
+                    <button>Login</button>
+                </div>
+                <div class="form-link">
+                    <span  style=" color: #940C4D ; " >Already have an account? <a href="#" class="link signup-link">singup</a> </span>
+                </div>
+            </form>
+        </div>
+        
+      
+        <!-- Signup form -->
+
+       </div>
+       <div class="form signup">
+        <div class="form-content">
+            <header style=" color: #940C4D ; ">Signup</header>
+            <form action="/register" method="post">
+                <div class="feild input-feild">
+                    <input type="email" placeholder="Email" class="email" name="email" id="email">
+                </div>
+                  
+                <div class="feild input-feild">
+                    <input type="password" placeholder="Password" class="password" name="password" id="password">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+
+                <div class="feild input-feild">
+                    <input type="password" placeholder="confirmation" class="confirmation" name="confirmation" id="confirmation">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+
+                <div class="mb-3">
+                    <!-- <label for="acc_type">Select your Account Type :</label> -->
+                    <select name="acc_type" id="acc_type">
+                    <option disable selected> Select Account Type</option> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="feild button-feild">
+                    <button>Signup</button>
+                </div>
+                <div class="form-link">
+                    <span style=" color: #940C4D ; ">Already have an account? <a href="#" class="link login-link">Login</a> </span>
+                </div>
+            </form>
+        </div>
+        
+        
+       
+        
+
+       </div>
+    </section>
+    <!-- Javascript -->
+    <script src="static/signin.js"></script>
+</body>
+</html>
